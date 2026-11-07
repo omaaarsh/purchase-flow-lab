@@ -1,0 +1,9 @@
+// Provided.
+export enum PackagePurchaseStatus {
+  PENDING = 'PENDING',
+  PAID = 'PAID',
+  COMPLETED = 'COMPLETED',
+  PAYMENT_FAILED = 'PAYMENT_FAILED',
+  REFUNDED = 'REFUNDED',
+  CANCELLED = 'CANCELLED',
+}

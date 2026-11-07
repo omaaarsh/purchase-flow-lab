@@ -1,0 +1,26 @@
+{
+  "name": "purchase-flow-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Weekend lab: a purchase status state machine (day 1) and a saga with compensation (day 2).",
+  "scripts": {
+    "test": "jest",
+    "test:saturday": "jest test/unit/shared/state-machine test/unit/modules/package-purchases",
+    "test:sunday": "jest test/unit/shared/saga test/unit/modules/purchasing",
+    "test:watch": "jest --watch",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write src test",
+    "format:check": "prettier --check src test"
+  },
+  "dependencies": {
+    "xstate": "^5.33.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.20.5",
+    "jest": "^30.5.2",
+    "prettier": "^3.9.10",
+    "ts-jest": "^29.4.15",
+    "typescript": "^5.9.3"
+  }
+}
